@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/*"
-to = "/"
+to = "/travel_recommandation.html"
 force = true
 status = 404
