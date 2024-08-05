@@ -1,24 +1,4 @@
-# netlify.toml
-
-[build]
-  # Directory where the build output is located
-  publish = "build"
-  
-  # The command to run to build the project
-  command = "npm run build"
-
-[redirects]
-  # Redirect all requests to index.html for single-page applications
-  [[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
-
-[headers]
-  # Add security headers or other headers
-  [[headers]]
-    for = "/*"
-    [headers.values]
-      X-Frame-Options = "DENY"
-      X-XSS-Protection = "1; mode=block"
-      X-Content-Type-Options = "nosniff"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
